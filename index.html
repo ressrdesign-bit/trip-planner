@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Trip Planner — Komplett</title>
+
+<!-- Manifest és theme color -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#06b6d4"/>
+
+<!-- Sötétkék stílus és app teljes kódja -->
+<style>
+body{margin:0;font-family:sans-serif;background:#071124;color:#fff}
+/* Ide jöhet a teljes eredeti CSS-ed, rövidítve a példa kedvéért */
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Trip Planner — Komplett</h1>
+    <div class="small">Teszt PWA változat</div>
+  </header>
+</div>
+
+<script>
+// Itt lenne a teljes eredeti JS logika (most rövidítve a példa kedvéért)
+console.log("Trip Planner fut");
+</script>
+
+<!-- Service Worker regisztráció -->
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+    .register("sw.js")
+    .then(() => console.log("Service Worker regisztrálva"))
+    .catch((err) => console.error("SW hiba:", err));
+}
+</script>
+</body>
+</html>
